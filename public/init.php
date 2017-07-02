@@ -7,6 +7,7 @@ namespace PhalApi;
 
 use PhalApi\Loader;
 use PhalApi\Config\FileConfig;
+use PhalApi\Logger;
 use PhalApi\Logger\FileLogger;
 use PhalApi\DB\DBNotORM;
 
@@ -40,7 +41,7 @@ if (DI()->debug) {
 }
 
 // 日记纪录
-DI()->logger = new FileLogger(API_ROOT . '/runtime', FileLogger::LOG_LEVEL_DEBUG | FileLogger::LOG_LEVEL_INFO | FileLogger::LOG_LEVEL_ERROR);
+DI()->logger = new FileLogger(API_ROOT . '/runtime', Logger::LOG_LEVEL_DEBUG | Logger::LOG_LEVEL_INFO | Logger::LOG_LEVEL_ERROR);
 
 // 数据操作 - 基于NotORM
 //DI()->notorm = new DBNotORM(DI()->config->get('dbs'), DI()->debug);
