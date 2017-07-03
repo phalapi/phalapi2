@@ -1,7 +1,5 @@
 <?php
 
-namespace PhalApi;
-
 use PhalApi\Loader;
 use PhalApi\Config\FileConfig;
 use PhalApi\Logger;
@@ -14,16 +12,16 @@ use PhalApi\DB\DBNotORM;
 $loader = new Loader(API_ROOT, 'Library');
 
 // 自动加载
-DI()->loader = $loader;
+\PhalApi\DI()->loader = $loader;
 
 // 配置
-DI()->config = new FileConfig(API_ROOT . '/config');
+\PhalApi\DI()->config = new FileConfig(API_ROOT . '/config');
 
 // 调试模式，$_GET['__debug__']可自行改名
-DI()->debug = !empty($_GET['__debug__']) ? true : DI()->config->get('sys.debug');
+\PhalApi\DI()->debug = !empty($_GET['__debug__']) ? true : \PhalApi\DI()->config->get('sys.debug');
 
 // 日记纪录
-DI()->logger = new FileLogger(API_ROOT . '/runtime', Logger::LOG_LEVEL_DEBUG | Logger::LOG_LEVEL_INFO | Logger::LOG_LEVEL_ERROR);
+\PhalApi\DI()->logger = new FileLogger(API_ROOT . '/runtime', Logger::LOG_LEVEL_DEBUG | Logger::LOG_LEVEL_INFO | Logger::LOG_LEVEL_ERROR);
 
 // 数据操作 - 基于NotORM
 //DI()->notorm = new DBNotORM(DI()->config->get('dbs'), DI()->debug);

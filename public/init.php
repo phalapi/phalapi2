@@ -9,6 +9,9 @@ defined('API_ROOT') || define('API_ROOT', dirname(__FILE__) . '/..');
 // 引入composer
 require_once API_ROOT . '/vendor/autoload.php';
 
+// 时区设置
+date_default_timezone_set('Asia/Shanghai');
+
 // 引入DI服务
 include API_ROOT . '/config/di.php';
 
@@ -20,9 +23,6 @@ if (\PhalApi\DI()->debug) {
     error_reporting(E_ALL);
     ini_set('display_errors', 'On'); 
 }
-
-// 时区设置
-date_default_timezone_set('Asia/Shanghai');
 
 // 翻译语言包设定
 \PhalApi\SL('zh_cn');
