@@ -40,9 +40,9 @@ class Upload extends Api {
 
         $tmpName = $this->file['tmp_name'];
 
-        $name = md5($this->file['name']);
+        $name = md5($this->file['name'] . $_SERVER['REQUEST_TIME']);
         $ext = strrchr($this->file['name'], '.');
-        $uploadFolder = sprintf('%s/Public/upload/', API_ROOT);
+        $uploadFolder = sprintf('%s/public/uploads/', API_ROOT);
         if (!is_dir($uploadFolder)) {
             mkdir($uploadFolder, 0777);
         }
@@ -50,7 +50,7 @@ class Upload extends Api {
         $imgPath = $uploadFolder .  $name . $ext;
         if (move_uploaded_file($tmpName, $imgPath)) {
             $rs['code'] = 1;
-            $rs['url'] = sprintf('http://%s/upload/%s%s', $_SERVER['SERVER_NAME'], $name, $ext);
+            $rs['url'] = sprintf('http://%s/uploads/%s%s', $_SERVER['SERVER_NAME'], $name, $ext);
         }
 
         return $rs;

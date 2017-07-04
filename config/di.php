@@ -9,7 +9,7 @@ use PhalApi\DB\DBNotORM;
 /** ---------------- 注册&初始化 基本服务组件 ---------------- **/
 
 // 兼容PhalApi 1.x 旧版本
-$loader = new Loader(API_ROOT, 'Library');
+$loader = new Loader(API_ROOT, array('Library', 'library'));
 
 // 自动加载
 \PhalApi\DI()->loader = $loader;
