@@ -10,7 +10,7 @@ return array(
      * DB数据库服务器集群
      */
     'servers' => array(
-        'db_demo' => array(                         //服务器标记
+        'db_master' => array(                         //服务器标记
             'host'      => 'localhost',             //数据库域名
             'name'      => 'phalapi',               //数据库名字
             'user'      => 'root',                  //数据库用户名
@@ -29,7 +29,7 @@ return array(
             'prefix' => 'tbl_',
             'key' => 'id',
             'map' => array(
-                array('db' => 'db_demo'),
+                array('db' => 'db_master'),
             ),
         ),
 
@@ -38,8 +38,8 @@ return array(
             'prefix' => 'tbl_',                                         //表名前缀
             'key' => 'id',                                              //表主键名
             'map' => array(                                             //表路由配置
-                array('db' => 'db_demo'),                               //单表配置：array('db' => 服务器标记)
-                array('start' => 0, 'end' => 2, 'db' => 'db_demo'),     //分表配置：array('start' => 开始下标, 'end' => 结束下标, 'db' => 服务器标记)
+                array('db' => 'db_master'),                               //单表配置：array('db' => 服务器标记)
+                array('start' => 0, 'end' => 2, 'db' => 'db_master'),     //分表配置：array('start' => 开始下标, 'end' => 结束下标, 'db' => 服务器标记)
             ),
         ),
          */
