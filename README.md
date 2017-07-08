@@ -19,7 +19,7 @@ $ composer install
 
 访问以下链接：  
 ```
-http://localhsot/public/?service=App.Site.Index
+http://localhsot/path/to/phalapi2/public/
 ```
 可以看到类似这样的输出：  
 ```
