@@ -3,7 +3,7 @@
     "description": "PhalApi v2.x, a light-weight framework focus on how to develop API faster and simple.",
     "keywords": ["api"],
     "homepage": "http://www.phalapi.net",
-    "license" : "GPL",
+    "license" : "GPL-3.0+",
     "authors": [
         {
             "name": "Dogstar Huang",

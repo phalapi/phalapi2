@@ -15,6 +15,19 @@ $ composer require phalapi/phalapi2
 $ composer install
 ```
 
+## 2.0 版本系统架构
+
+PhalApi 2.0 版本的系统架构如下：  
+
+![](http://7xiz2f.com1.z0.glb.clouddn.com/20170708092204_54812b18c33ab263331685a5a7c18400)
+
+主要分为三层：  
+
+ + **phalapi/phalapi2**  项目应用层，可使用phalapi/phalapi2搭建微服务、接口系统、RESTful、WebServices等。  
+ + **扩展类库**  扩展类库是指可选的、可重用的组件或类库，可以直接集成使用，由广大开发人员维护分享，对应原来的PhalApi-Library项目。  
+ + **核心框架**  分别两大部分，PhalApi核心部分kernal，以及优化后的notorm。  
+
+
 ## 开发规范
 
 ### 类名重命名规则
