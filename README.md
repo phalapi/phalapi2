@@ -15,6 +15,28 @@ $ composer require phalapi/phalapi2
 $ composer install
 ```
 
+### 访问默认接口服务
+
+访问以下链接：  
+```
+http://localhsot/public/?service=App.Site.Index
+```
+可以看到类似这样的输出：  
+```
+{
+    "ret": 200,
+    "data": {
+        "title": "Hello World!",
+        "content": "PHPer您好，欢迎使用PhalApi！",
+        "version": "1.4.1",
+        "time": 1499477583
+    },
+    "msg": ""
+}
+```
+
+> 温馨提示：推荐将访问根路径指向/path/to/phalapi2/public。
+
 ## 2.0 版本系统架构
 
 PhalApi 2.0 版本的系统架构如下：  
