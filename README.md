@@ -30,3 +30,7 @@ http://localhsot/path/to/phalapi2/public/
 > 温馨提示：推荐将访问根路径指向/path/to/phalapi2/public。
 
 PhalApi 2.x 版本文档请见：[Github Wiki](https://github.com/phalapi/PhalApi2/wiki)  
+
+## 发现问题，怎么办？  
+
+如发现问题，或者任何问题，欢迎提交Issue到[这里](https://github.com/phalapi/PhalApi2/issues)。
