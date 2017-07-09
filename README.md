@@ -1,23 +1,15 @@
-# PhalApi 2.0 
+![apic](http://webtools.qiniudn.com/master-LOGO-20150410_50.jpg)  
+
+# [PhalApi 2.0.0 - 助你创造价值！](https://www.phalapi.net/) 
 
 ## 快速安装
-
-### 使用composer安装
-
-```bash
-$ composer require phalapi/phalapi2
-```
-
-### 手动下载安装
 
 将此项目代码下载解压后，进行composer安装，即：  
 ```bash
 $ composer install
 ```
 
-### 访问默认接口服务
-
-访问以下链接：  
+随后，可通过以下链接，访问默认接口服务。  
 ```
 http://localhsot/path/to/phalapi2/public/
 ```
@@ -36,3 +28,5 @@ http://localhsot/path/to/phalapi2/public/
 ```
 
 > 温馨提示：推荐将访问根路径指向/path/to/phalapi2/public。
+
+PhalApi 2.x 版本文档请见：[Github Wiki](https://github.com/phalapi/PhalApi2/wiki)  
