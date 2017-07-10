@@ -2,6 +2,11 @@
 
 # [PhalApi 2.0.0 - 助你创造价值！](https://www.phalapi.net/) 
 
+[![Latest Stable Version](https://poser.pugx.org/phalapi/phalapi2/v/stable)](https://packagist.org/packages/phalapi/phalapi2)
+[![Total Downloads](https://poser.pugx.org/phalapi/phalapi2/downloads)](https://packagist.org/packages/phalapi/phalapi2)
+[![Latest Unstable Version](https://poser.pugx.org/phalapi/phalapi2/v/unstable)](https://packagist.org/packages/phalapi/phalapi2)
+[![License](https://poser.pugx.org/phalapi/phalapi2/license)](https://packagist.org/packages/phalapi/phalapi2)
+
 ## 快速安装
 
 将此项目代码下载解压后，进行composer安装，即：  
