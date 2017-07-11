@@ -11,11 +11,11 @@ return array(
      */
     'servers' => array(
         'db_master' => array(                         //服务器标记
-            'host'      => \PhalApi\Env::get('mysql.host','127.0.0.1'),             //数据库域名
-            'name'      => \PhalApi\Env::get('mysql.name','phalapi'),               //数据库名字
-            'user'      => \PhalApi\Env::get('mysql.user','root'),                  //数据库用户名
-            'password'  => \PhalApi\Env::get('mysql.password',''),	                    //数据库密码
-            'port'      => \PhalApi\Env::get('mysql.port',3306),                  //数据库端口
+            'host'      => '127.0.0.1',             //数据库域名
+            'name'      => 'phalapi',               //数据库名字
+            'user'      => 'root',                  //数据库用户名
+            'password'  => '',	                    //数据库密码
+            'port'      => 3306,                  //数据库端口
             'charset'   => 'UTF8',                  //数据库字符集
         ),
     ),
@@ -26,7 +26,7 @@ return array(
     'tables' => array(
         //通用路由
         '__default__' => array(
-            'prefix' => \PhalApi\Env::get('mysql.prefix','tb_'),
+            'prefix' => 'tbl_',
             'key' => 'id',
             'map' => array(
                 array('db' => 'db_master'),
