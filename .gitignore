@@ -6,3 +6,5 @@ public/docs
 
 public/uploads
 
+.idea/
+.env
