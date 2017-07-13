@@ -1,4 +1,11 @@
 <?php
+/**
+ * DI依赖注入配置文件
+ * 
+ * @license     http://www.phalapi.net/license GPL 协议
+ * @link        http://www.phalapi.net/
+ * @author dogstar <chanzonghuang@gmail.com> 2017-07-13
+ */
 
 use PhalApi\Loader;
 use PhalApi\Config\FileConfig;
