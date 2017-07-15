@@ -55,3 +55,5 @@ if (!empty($_GET['callback'])) {
     $di->response = new \PhalApi\Response\JsonpResponse($_GET['callback']);
 }
  */
+
+$di->response = new \App\Common\Response();
