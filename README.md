@@ -26,7 +26,7 @@ http://localhsot/path/to/phalapi2/public/
     "data": {
         "title": "Hello World!",
         "content": "PHPer您好，欢迎使用PhalApi！",
-        "version": "1.4.1",
+        "version": "2.0.0",
         "time": 1499477583
     },
     "msg": ""
