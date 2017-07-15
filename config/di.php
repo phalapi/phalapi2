@@ -56,4 +56,3 @@ if (!empty($_GET['callback'])) {
 }
  */
 
-$di->response = new \App\Common\Response();
