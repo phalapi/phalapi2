@@ -13,6 +13,7 @@
 ```bash
 $ composer install
 ```
+> 温馨提示：关于composer的使用，请参考[Composer 中文网 / Packagist 中国全量镜像](http://www.phpcomposer.com/)。
 
 随后，可通过以下链接，访问默认接口服务。  
 ```
