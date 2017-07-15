@@ -39,20 +39,19 @@ $di->notorm = new NotORMDatabase($di->config->get('dbs'), $di->debug);
 
 /**
 // 签名验证服务
-DI()->filter = 'PhalApi_Filter_SimpleMD5';
+$di->filter = new \PhalApi\Filter\SimpleMD5Filter();
  */
 
 /**
 // 缓存 - Memcache/Memcached
-DI()->cache = function () {
-    return new PhalApi_Cache_Memcache(DI()->config->get('sys.mc'));
+$di->cache = function () {
+    return new \PhalApi\Cache\MemcacheCache(DI()->config->get('sys.mc'));
 };
  */
 
 /**
 // 支持JsonP的返回
 if (!empty($_GET['callback'])) {
-    DI()->response = new PhalApi_Response_JsonP($_GET['callback']);
+    $di->response = new \PhalApi\Response\JsonpResponse($_GET['callback']);
 }
  */
-
