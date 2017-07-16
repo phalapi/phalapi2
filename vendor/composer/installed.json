@@ -54,25 +54,24 @@
         "source": {
             "type": "git",
             "url": "https://github.com/phalapi/kernal.git",
-            "reference": "7c3f404ec60199750390f89cac3333f0fa22a16d"
+            "reference": "126d6dc713fc119135b97fa4d81df0119d3fac7f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://files.phpcomposer.com/files/phalapi/kernal/7c3f404ec60199750390f89cac3333f0fa22a16d.zip",
-            "reference": "7c3f404ec60199750390f89cac3333f0fa22a16d",
+            "url": "https://files.phpcomposer.com/files/phalapi/kernal/126d6dc713fc119135b97fa4d81df0119d3fac7f.zip",
+            "reference": "126d6dc713fc119135b97fa4d81df0119d3fac7f",
             "shasum": ""
         },
         "require": {
             "phalapi/notorm": "dev-master",
             "php": ">=5.3.3"
         },
-        "time": "2017-07-15T03:11:56+00:00",
+        "time": "2017-07-16T05:07:09+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
             "files": [
                 "src/bootstrap.php",
-                "src/map.php",
                 "src/functions.php"
             ],
             "psr-4": {
