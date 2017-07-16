@@ -21,6 +21,7 @@ class Site extends Api {
 	
 	/**
 	 * 默认接口服务
+     * @desc 默认接口服务，当未指定接口服务时执行此接口服务
 	 * @return string title 标题
 	 * @return string content 内容
 	 * @return string version 版本，格式：X.X.X
