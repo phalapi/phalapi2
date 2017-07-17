@@ -25,7 +25,7 @@ $ composer create-project phalapi/phalapi2 ./phalapi2 dev-master
 $ composer update
 ```
 
-### 访问
+### 访问接口服务
 
 随后，可通过以下链接，访问默认接口服务。  
 ```
