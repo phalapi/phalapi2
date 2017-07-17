@@ -16,6 +16,7 @@
 ```bash
 $ composer create-project phalapi/phalapi2 ./phalapi2 dev-master
 ```
+> 温馨提示：关于composer的使用，请参考[Composer 中文网 / Packagist 中国全量镜像](http://www.phpcomposer.com/)。
 
 ### 手动下载安装
 
@@ -23,7 +24,8 @@ $ composer create-project phalapi/phalapi2 ./phalapi2 dev-master
 ```bash
 $ composer update
 ```
-> 温馨提示：关于composer的使用，请参考[Composer 中文网 / Packagist 中国全量镜像](http://www.phpcomposer.com/)。
+
+### 访问
 
 随后，可通过以下链接，访问默认接口服务。  
 ```
