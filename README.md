@@ -9,9 +9,19 @@
 
 ## 快速安装
 
-将此项目代码下载解压后，进行composer安装，即：  
+### composer一键安装
+
+使用composer创建项目的命令，可实现一键安装。如安装到phalapi2目录：
+
 ```bash
-$ composer install
+$ composer create-project phalapi/phalapi2 ./phalapi2 dev-master
+```
+
+### 手动下载安装
+
+或者，也可以进行手动安装。将此Git项目代码下载解压后，进行可选的composer更新，即：  
+```bash
+$ composer update
 ```
 > 温馨提示：关于composer的使用，请参考[Composer 中文网 / Packagist 中国全量镜像](http://www.phpcomposer.com/)。
 
